@@ -21,7 +21,7 @@ function App() {
     formData.append("tbrs", tbrs);
 
     try {
-      const res = await fetch("http://localhost:8000/processar", {
+      const res = await fetch("https://sidelinestool.onrender.com/processar", {
         method: "POST",
         body: formData,
       });
@@ -59,7 +59,7 @@ function App() {
     formData.append("tbrs", tbrs);
 
     try {
-      const res = await fetch("http://localhost:8000/preview", {
+      const res = await fetch("https://sidelinestool.onrender.com/preview", {
         method: "POST",
         body: formData,
       });
